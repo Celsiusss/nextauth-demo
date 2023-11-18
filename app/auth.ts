@@ -23,13 +23,6 @@ export const authConfig = {
       },
     } satisfies OIDCConfig<any>,
   ],
-  callbacks: {
-    jwt: async ({ token }) => {
-      token.hello = "world";
-      console.log(token);
-      return token;
-    },
-  },
 } satisfies NextAuthConfig;
 
 export const {
