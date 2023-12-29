@@ -2,6 +2,7 @@ import NextAuth, { NextAuthConfig } from "next-auth";
 import { OIDCConfig } from "next-auth/providers";
 
 export const authConfig = {
+  debug: true,
   providers: [
     {
       id: "id",
